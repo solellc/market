@@ -875,7 +875,7 @@
 
 /* Main */
 
-	#main {
+	#main, .main {
 		-moz-transform-origin: 50% 50%;
 		-webkit-transform-origin: 50% 50%;
 		-ms-transform-origin: 50% 50%;
@@ -926,7 +926,7 @@
 
 		@media screen and (max-width: 480px) {
 
-			#main {
+			#main, .main {
 				padding: 4em 2em 2.5em 2em ;
 				width: 100%;
 			}
@@ -938,7 +938,7 @@
 
 		}
 
-		body.is-preload #main {
+		body.is-preload .main {
 			-moz-transform: rotateX(15deg);
 			-webkit-transform: rotateX(15deg);
 			-ms-transform: rotateX(15deg);
