@@ -967,6 +967,15 @@ p.content {
       margin: 0 0 20px 20px;
     }
 
+nav.menu ul {
+  padding: unset;
+  list-style-type: none;
+}
+
+  nav.menu ul li {
+    padding: unset;
+  }
+
 /* Footer */
 
 	#footer {
