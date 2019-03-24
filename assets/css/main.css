@@ -976,6 +976,26 @@ nav.menu ul {
     padding: unset;
   }
 
+#about, #gallery, #contact {
+  margin-top: 1em;
+}
+
+ul.thumbnails {
+  padding: unset;
+  list-style-type: none;
+}
+
+  ul.thumbnails li {
+    float: left;
+    padding: unset;
+    margin: 0 1em 1em 0;
+  }
+
+    ul.thumbnails li img {
+      border-radius: 4px;
+      width: 20em;
+    }
+
 /* Footer */
 
 	#footer {
