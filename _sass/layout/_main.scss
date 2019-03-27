@@ -18,10 +18,9 @@
     border-radius: _size(border-radius);
     cursor: default;
     max-width: 100%;
-    opacity: 0.95;
     position: relative;
     text-align: center;
-    width: 27em;
+    width: 80em;
 
     .avatar {
       position: relative;
@@ -48,6 +47,28 @@
       }
     }
 
+    article p {
+      text-align: justify;
+      text-transform: none;
+      letter-spacing: 0.1em;
+
+      img {
+        width: 20em;
+        border-radius: _size(border-radius);
+        margin-bottom: _size(element-margin);
+
+        &.left {
+          float: left;
+          margin-right: _size(element-margin);
+        }
+
+        &.right {
+          float: right;
+          margin-left: _size(element-margin);
+        }
+      }
+    }
+
     @include breakpoint('<=xsmall') {
       @include padding(4em, 2em);
       width: 100%;
@@ -56,6 +77,14 @@
         &:before {
           left: -2em;
           width: calc(100% + 4em);
+        }
+      }
+
+      article p {
+        img {
+          float: unset;
+          display: block;
+          width: 100%;
         }
       }
     }
