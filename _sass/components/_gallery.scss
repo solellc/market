@@ -1,0 +1,17 @@
+ul.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: unset;
+  list-style-type: none;
+
+  li {
+    padding: unset;
+    margin: _size(element-margin);
+
+    img {
+      width: 20em;
+      border-radius: _size(border-radius);
+    }
+  }
+}
