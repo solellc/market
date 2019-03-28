@@ -14,4 +14,23 @@ ul.gallery {
       border-radius: _size(border-radius);
     }
   }
+
+  @include breakpoint('<=medium') {
+    li {
+      img {
+        width: 25em;
+      }
+    }
+  }
+
+  @include breakpoint('<=xsmall') {
+    li {
+      margin-left: 0;
+      margin-right: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
