@@ -90,7 +90,7 @@
     }
 
     body.is-preload & {
-      @include vendor('transform', 'rotateX(15deg)');
+      //@include vendor('transform', 'rotateX(15deg)');
       opacity: 0;
     }
   }
