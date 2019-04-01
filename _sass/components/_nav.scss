@@ -1,0 +1,21 @@
+nav {
+  ul {
+    @include vendor('align-self', 'flex-end');
+    padding: unset;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin: 0 0 0 (0.85em - (_size(letter-spacing) * 2));
+      padding: 0 0 0 0.85em;
+      border-left: solid _size(border-width) _palette(border);
+      line-height: 1;
+
+      &:first-child {
+        margin: 0;
+        padding: 0;
+        border-left: 0;
+      }
+    }
+  }
+}
