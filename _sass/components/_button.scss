@@ -60,4 +60,8 @@
       @include vendor('pointer-events', 'none');
       opacity: 0.5;
     }
+
+    @include breakpoint('<=xsmall') {
+      font-size: 0.9em;
+    }
   }
