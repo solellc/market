@@ -61,7 +61,11 @@
       opacity: 0.5;
     }
 
-    @include breakpoint('<=xsmall') {
+    @include breakpoint('<=small') {
+      height: auto;
+      padding: 0.9em;
       font-size: 0.9em;
+      line-height: 1.2em;
+      white-space: normal;
     }
   }
