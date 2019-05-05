@@ -13,12 +13,12 @@ ul.gallery {
       border-radius: _size(border-radius);
     }
 
-    img.detail { display: none; }
+    img.alternate { display: none; }
   }
 
   li:hover {
-    img.full { display: none; }
-    img.detail { display: inherit; }
+    img.primary { display: none; }
+    img.alternate { display: inherit; }
   }
 
   @include breakpoint('<=medium') {
