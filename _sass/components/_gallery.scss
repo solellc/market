@@ -6,6 +6,7 @@ ul.gallery {
   list-style-type: none;
 
   li {
+    @include vendor('transition', 'opacity #{_duration(main)} ease');
     margin: _size(element-margin);
 
     img {
@@ -17,6 +18,14 @@ ul.gallery {
 
     &.hide {
       display: none;
+    }
+
+    &.show {
+      opacity: 0;
+    }
+
+    &.reveal {
+      opacity: 1;
     }
   }
 
