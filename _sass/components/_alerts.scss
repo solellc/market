@@ -1,0 +1,10 @@
+.alert {
+  padding: 0.5em 1em;
+  border-radius: _size(border-radius);
+
+  &.info {
+    background-color: #2ac2ac;//#b7e3e8;
+    color: white;
+    font-weight: bold;
+  }
+}
