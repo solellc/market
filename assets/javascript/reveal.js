@@ -1,5 +1,5 @@
 (function() {
-  var countRevealedOnClick = 3
+  //var countRevealedOnClick = 3
   var revealDelay = 50 // miliseconds
   var revealButtonMarkup = '<h3><a href="#">Click to See More</a></h3>'
 
@@ -16,7 +16,7 @@
       e.preventDefault()
       let items = gallery
         .find('li.hide')
-        .slice(0, countRevealedOnClick)
+        //.slice(0, countRevealedOnClick)
 
       items
         .removeClass('hide')
