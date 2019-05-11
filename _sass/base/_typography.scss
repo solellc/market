@@ -117,4 +117,5 @@
     border: 0;
     border-bottom: solid _size(border-width) _palette(border);
     margin: (_size(element-margin) * 2) 0;
+    &.dashed { border-style: dashed; }
   }
