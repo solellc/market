@@ -8,10 +8,6 @@
     var more = $(revealButtonMarkup)
     more.insertAfter(gallery)
 
-    gallery
-      .find('li:not(.js-pick)')
-      .addClass('hide')
-
     more.on('click', function(e) {
       e.preventDefault()
       let items = gallery
