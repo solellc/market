@@ -22,8 +22,14 @@
         .removeClass('hide')
         .addClass('show')
         .each(function(index, item) {
+          var $item = $(item)
+          $item.find('img').each(function(_index, img) {
+            var $img = $(img)
+            var src = $img.data('src')
+            $img.attr('src', src)
+          })
           var delay = 10 + index * revealDelay
-          setTimeout(function() { $(item).addClass('reveal') }, delay)
+          setTimeout(function() { $item.addClass('reveal') }, delay)
         })
 
       if (gallery.find('li.hide').size() < 1) {
