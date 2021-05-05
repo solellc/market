@@ -15,6 +15,13 @@
     <meta content="fresh, flowers, fresh flowers, floral, bundles, florence, alabama, florence alabama, shoals, flower arrangements, floral design, flower design, design" />
     <meta content="Bringing you beauty" name="description" />
 
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}/images/preview-1.jpeg" />
+    <meta property="og:description" content="{{ page.description | default: site.description }}" />
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/assets/css/main.css" />
