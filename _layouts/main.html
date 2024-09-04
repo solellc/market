@@ -29,8 +29,73 @@
     <script src="/assets/javascript/zepto.min.js"></script>
     <script async defer type="text/javascript" src="https://plausible.io/js/plausible.js"></script>
     <script async defer id="sq-embed-js" src="https://cdn.sq-api.com/market/embed.js" charset="utf-8"></script>
+
+    <style>
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+
+        background-color: rgb(0 0 0 / 50%);
+        backdrop-filter: blur(10px);
+      }
+
+      #overlay #modal {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 2rem auto;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        text-align: center;
+        height: fit-content;
+        max-height: 90%;
+        overflow-y: auto;
+        max-width: 40rem;
+      }
+
+      #overlay #cover {
+        margin: auto;
+        padding-right: 0.5rem;
+      }
+
+      #overlay #cover img {
+        width: 10rem;
+        border-radius: 9999px;
+      }
+
+      #overlay #button {
+        padding: 0.25rem;
+        border-width: 1px;
+        border-color: rgb(0 0 0);
+        border-style: solid;
+        border-radius: 0.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      #overlay #close {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body id="top" class="is-preload">
+    <!-- Overlay -->
+      <div id="overlay">
+        <div id="modal">
+          <div id="cover"><img src="/assets/best-hayes-ahead.jpg" /></div>
+          <p>
+            Check out our latest project!
+            We're starting a podcast and shows.
+            You can find out more, watch, and listen at <a href="https://besthayesahead.com">https://besthayesahead.com</a>.
+          </p>
+          <a id="button" href="https://besthayesahead.com">Go check it out!</a>
+          <a id="close">Dismiss</a>
+        </div>
+      </div>
 
     <!-- Wrapper -->
       <div id="wrapper">
@@ -76,5 +141,11 @@
         }
       </script>
       <script src="/assets/javascript/reveal.js"></script>
+
+      <script type="text/javascript">
+        $(document.getElementById('close')).on('click', function(){
+          $(document.getElementById('overlay')).hide()
+        })
+      </script>
   </body>
 </html>
